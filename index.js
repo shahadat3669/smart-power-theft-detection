@@ -18,6 +18,10 @@ app.use('/api/v1/stations', stationRoute);
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to rest api application.' });
 });
+app.post('/', (req, res) => {
+  console.log(req.body.documents);
+  res.json({ message: 'Welcome to rest api application.' });
+});
 app.use(function (error, req, res, next) {
   // eslint-disable-next-line no-console
   console.log(error);

@@ -5,6 +5,7 @@ const stationController = require('../controllers/station.controller');
 const router = express.Router();
 
 router.get('/', stationController.findAll);
+router.get('/sub', stationController.subAll);
 router.post('/update', stationController.updateAll);
 // router.post('/', stationController.create);
 // router.get('/:id', stationController.findOne);
